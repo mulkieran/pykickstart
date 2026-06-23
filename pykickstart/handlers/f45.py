@@ -87,6 +87,7 @@ class F45Handler(BaseHandler):
         "snapshot": commands.snapshot.F26_Snapshot,
         "sshpw": commands.sshpw.F24_SshPw,
         "sshkey": commands.sshkey.F22_SshKey,
+        "stratis": commands.stratis.F45_Stratis,
         "text": commands.displaymode.F26_DisplayMode,
         "timezone": commands.timezone.F40_Timezone,
         "updates": commands.updates.F34_Updates,

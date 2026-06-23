@@ -81,6 +81,7 @@ from pykickstart.commands import (
     snapshot,
     sshpw,
     sshkey,
+    stratis,
     syspurpose,
     timezone,
     updates,
