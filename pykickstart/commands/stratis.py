@@ -72,7 +72,7 @@ class F45_StratisPool(KickstartCommand):
                         help="""
                         Name of pool.
                         """)
-        op.add_argument("--device", version=F45, action="extend",
+        op.add_argument("device", version=F45, nargs="+",
                         help="""
                         Abstract ID of device to create pool from. May be
                         specified multiple times.
