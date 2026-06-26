@@ -41,11 +41,6 @@ class F45_StratisFs(KickstartCommand):
                         Filesystem size limit. Must not be less than
                         filesystem size.
                         """)
-        op.add_argument("--crypt", version=F45,
-                        help="""
-                        Whether this filesystem may be placed on an encrypted
-                        pool.
-                        """)
         return op
 
     def parse(self, args):
