@@ -82,11 +82,17 @@ class F45_StratisPool(KickstartCommand):
                         help="""
                         Allow overprovisioning on this pool.
                         """)
-        op.add_argument("--encrypt", version=F45,
+        op.add_argument("--encrypted", version=F45,
                         default=False, action="store_true",
                         help="""
-                        On reboot, request the user during setup to encrypt
-                        this pool.
+                        This pool is to be encrypted. At present there is
+                        only one facility that is being implemented, which is
+                        password in plain text in kickstart file.
+                        """)
+        op.add_argument("--passphrase", version=F45,
+                        help="""
+                        Passpword in plain text. Only valid if '--encrypted'
+                        is set.
                         """)
         return op
 
